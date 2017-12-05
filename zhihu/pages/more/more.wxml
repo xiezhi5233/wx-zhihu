@@ -1,0 +1,23 @@
+<!--pages/more/more.wxml-->
+<view>
+  <view class='user-card'>
+				<image src="{{userInfo.avatarUrl}}"/>
+				<view class="home-cont-head">
+					<text class='ome-cont-user-name'>{{cardData[0].userName}}</text>
+				</view>
+				<view class='home-cont-text'
+					wx:if="{{cardData[0].userTxt.length<6}}">
+					{{cardData[0].userTxt}}
+				</view>
+				<view class='home-cont-text'
+					wx:else>
+					<text wx:for="{{cardData[0].content}}" wx:if="{{index<6}}">{{item}}</text>...
+				</view>
+  </view>
+  <view class='more-menu'>
+    <view wx:for="{{moreMenu}}" class="more-menu-a">
+    			<text class="fa {{item.icon}}"></text>
+    			{{item.text}}
+    </view>
+  </view>
+</view>

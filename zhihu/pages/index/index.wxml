@@ -1,0 +1,29 @@
+<!--index.wxml-->
+<view class="container">
+<!--搜索栏  -->
+  <view class="search-box"  bindtap="bindViewTap" data-ddd="233">
+    <view class='search-ipt'>
+      <text class="search-font"><text class='fa fa-search'></text>搜索话题,问题或人</text>
+    </view>
+    <view class='search-btn fa fa-flash'></view>
+  </view>
+  <!--首页内容  -->
+  <view class='home-container'>
+    <view wx:for="{{contDate}}" class='home-cont-card'>
+      	<view class="home-cont-head">
+       <image src="{{userInfo.avatarUrl}}" ></image>
+        <text class='home-cont-user-name'>{{item.userName}}攒了回答1</text>
+        <text class='home-cont-more fa fa-ellipsis-h'></text>
+        </view>
+        <view class="home-cont-tite">
+          {{item.title}}
+        </view>
+        <view class='home-cont-text'>
+          {{item.content}}
+        </view>
+        <view class='home-cont-discuss'>
+          {{item.applaud}}赞同 · {{item.discuss}}评论 · <text>关注问题</text>
+        </view>
+      </view>
+  </view>
+</view>

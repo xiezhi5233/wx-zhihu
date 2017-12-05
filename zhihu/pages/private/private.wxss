@@ -1,0 +1,40 @@
+/* pages/private/private.wxss */
+.user-card{
+	position:relative;
+  background: #fff;
+  border-radius: 5px;
+  box-sizing: border-box;
+  margin-top: 2px;
+  padding: 10px 10px 10px 80px;
+}
+.user-card image{
+	position:absolute;
+	top:10px;
+	left:10px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+.home-cont-head{
+  color:#888;
+}
+.home-cont-date{
+  position:absolute;
+  top:0px;
+  right:10px;
+  font-size:14px;
+  line-height:1;
+}
+.home-cont-tite{
+  color:#333;
+  font-size: 18px;
+  margin: 5px 0;
+}
+.home-cont-text{
+  color:#555;
+  font-size: 14px;
+}
+.home-cont-discuss{
+  color:#888;
+  font-size: 12px;
+}

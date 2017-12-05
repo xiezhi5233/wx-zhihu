@@ -1,0 +1,73 @@
+/**index.wxss**/
+.search-box{
+  position:relative;
+  width:100%;
+  height:40px;
+  padding:0 60px 0 30px;
+  background:#338CE5;
+  box-sizing:border-box;
+  overflow:hidden;
+}
+.search-ipt{
+  width:100%;
+  height:30px;
+  margin:5px 0;
+  background:#4EA2E7;
+}
+.search-btn{
+  position:absolute;
+  top:4px;
+  font-size:32px;
+  color:#fff;
+  right:20px;
+}
+.search-font{
+  color:#fff;
+  line-height:30px;
+}
+.search-font text{
+  margin:0 10px;
+}
+/*主页内容区域*/
+.home-container,.home-cont-box{
+  position: relative;
+
+}
+.home-cont-card{
+  background: #fff;
+  border-radius: 5px;
+  box-sizing: border-box;
+  margin-top: 10px;
+  padding: 10px;
+}
+.home-cont-head{
+  color:#888;
+}
+.home-cont-more{
+  float: right;
+}
+.home-cont-head image{
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+.home-cont-tite{
+  color:#333;
+  font-size: 18px;
+  margin: 5px 0;
+}
+.home-cont-text{
+  color:#555;
+  font-size: 14px;
+}
+.home-cont-discuss{
+  color:#888;
+  font-size: 12px;
+}
+
+
+
+
+

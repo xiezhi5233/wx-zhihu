@@ -1,0 +1,8 @@
+<!--logs.wxml这页是他喵的查看启动日志-->
+<view>
+  <view class='ipt-box'>
+    <input class="ipt" placeholder="请输入话题,问题或人"/>
+    <button class="fa fa-search"></button>
+  </view>
+  
+</view>

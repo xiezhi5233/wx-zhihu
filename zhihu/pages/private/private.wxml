@@ -1,0 +1,20 @@
+<!--pages/private/private.wxml-->
+<view>
+  <view class='user-card' wx:for="{{cardData}}">
+				<image src="{{item.userImg}}"/>
+				<view class="home-cont-head">
+					<text class='ome-cont-user-name'>{{item.userName}}</text>
+					<text class='home-cont-date'>
+						{{item.date}}
+					</text>
+				</view>
+				<view class='home-cont-text'
+					wx:if="{{item.userTxt.length<40}}">
+					{{item.userTxt}}
+				</view>
+				<view class='home-cont-text'
+					wx:else>
+					<text wx:for="{{item.userTxt}}" wx:if="{{index<25}}">{{item}}</text>...
+				</view>
+  </view>
+</view>

@@ -1,0 +1,39 @@
+<!--pages/classify/classify.wxml-->
+<!--分类页选项卡-->
+<view class="classify-box">
+  <view class="swiper-tab">
+    <view class="swiper-tab-item {{currentTab==0 ? 'on' : ''}}" data-current="0" bindtap="swichNav">推荐</view>
+    <view class="swiper-tab-item {{currentTab==1 ? 'on' : ''}}" data-current="1" bindtap="swichNav">圆桌</view>
+    <view class="swiper-tab-item {{currentTab==2 ? 'on' : ''}}" data-current="2" bindtap="swichNav">热门</view>
+    <view class="swiper-tab-item {{currentTab==3 ? 'on' : ''}}" data-current="3" bindtap="swichNav">收藏</view>
+  </view>
+  <swiper current="{{currentTab}}" class="swiper-box" duration="300" style="height:{{winHeight - 80}}px" bindchange="bindChange">
+    <swiper-item>
+         <view wx:for="{{cardData}}" class='home-cont-card'>
+        <view class="home-cont-head">
+        <image src="{{item.userImg}}"/>
+        <text class='home-cont-user-name'>{{item.userName}}攒了回答1</text>
+        <text class='home-cont-more fa fa-ellipsis-h'></text>
+        </view>
+        <view class="home-cont-tite">
+          {{item.title}}
+        </view>
+        <view class='home-cont-text'>
+          {{item.content}}
+        </view>
+        <view class='home-cont-discuss'>
+          {{item.applaud}}赞同 · {{item.discuss}}评论 · <text>关注问题</text>
+        </view>
+      </view>
+   </swiper-item>
+   <swiper-item>
+    <view class="demo-title">圆桌</view>
+   </swiper-item>
+   <swiper-item>
+     <view class="demo-title">热门</view>
+   </swiper-item>
+   <swiper-item>
+     <view class="demo-title">收藏</view>
+   </swiper-item>
+ </swiper>
+</view>

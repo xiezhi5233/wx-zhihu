@@ -1,0 +1,54 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/inform/inform",
+    "pages/private/private",
+    "pages/more/more",
+    "pages/classify/classify"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#0C5EBC",
+    "navigationBarTitleText": "知乎",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "borderStyle":"black",
+    "color":"#A9B5B5",
+    "selectedColor":"#2768C4",
+    "backgroundColor":"#FBFBFB",
+    "list": [
+      {
+        "text": "首页",
+        "iconPath":"/images/barrage_fill.png",
+        "selectedIconPath":"/images/barrage_fill (1).png",
+        "pagePath": "pages/index/index"
+      },
+      {
+        "text": "分类",
+        "iconPath": "/images/发现激活.png",
+        "selectedIconPath": "/images/发现激活 (1).png",        
+        "pagePath": "pages/classify/classify"
+      },
+      {
+        "text": "通知",
+        "iconPath": "/images/remind_fill.png",
+        "selectedIconPath": "/images/remind_fill (1).png",        
+        "pagePath": "pages/inform/inform"
+      },
+      {
+        "text": "私信",
+        "iconPath": "/images/BBD消息.png",
+        "selectedIconPath": "/images/BBD消息 (1).png",        
+        "pagePath": "pages/private/private"
+      },
+      {
+        "text": "更多",
+        "iconPath": "/images/BBD全部.png",
+        "selectedIconPath": "/images/BBD全部 (1).png",        
+        "pagePath": "pages/more/more"
+      }
+    ]
+  }
+}

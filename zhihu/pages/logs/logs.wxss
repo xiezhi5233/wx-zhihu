@@ -1,0 +1,27 @@
+.ipt-box{
+  position:relative;
+  box-sizing:border-box;
+  padding:10px 20px;
+  background:#338CE5;
+}
+.ipt-box .fa{
+  position:absolute;
+  top:10px;
+  right:20px;
+  width:40px;
+  height:40px;
+  line-height:40px;
+  color:#338CE5;
+  background:transparent;
+  border:0;
+  z-index:99;
+}
+.ipt{
+  height:40px;
+  background:#fff;
+  border-radius:5px;
+  box-sizing:border-box;
+  padding:3px 15px;
+  color:#333;
+  box-shadow:1px 1px 3px 0 #333 inset;
+}

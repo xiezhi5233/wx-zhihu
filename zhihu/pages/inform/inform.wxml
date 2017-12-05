@@ -1,0 +1,33 @@
+<!--pages/inform/inform.wxml-->
+<view class="classify-box">
+	<view class="swiper-tab">
+		<view class="swiper-tab-item {{currentTab==0 ? 'on' : ''}}" data-current="0" bindtap="swichNav">通知</view>
+		<view class="swiper-tab-item {{currentTab==1 ? 'on' : ''}}" data-current="1" bindtap="swichNav">赞与感谢</view>
+		<view class="swiper-tab-item {{currentTab==2 ? 'on' : ''}}" data-current="2" bindtap="swichNav">关注</view>
+	</view>
+	<swiper current="{{currentTab}}" class="swiper-box" duration="300" style="height:{{winHeight - 80}}px" bindchange="bindChange">
+		<swiper-item>
+			<view wx:for="{{cardData}}" class='home-cont-card'>
+				<image src="{{item.userImg}}"/>
+				<view class="home-cont-head">
+					<text class='ome-cont-user-name'>{{item.userName}}回答了问题</text>
+					<text class='home-cont-more fa fa-ellipsis-h'></text>
+				</view>
+				<view class='home-cont-text'
+					wx:if="{{item.content.length<40}}">
+					{{item.content}}
+				</view>
+				<view class='home-cont-text'
+					wx:else>
+					<text wx:for="{{item.content}}" wx:if="{{index<25}}">{{item}}</text>...
+				</view>
+			</view>
+		</swiper-item>
+		<swiper-item>
+			<view class="demo-title">赞与感谢</view>
+		</swiper-item>
+		<swiper-item>
+			<view class="demo-title">关注</view>
+		</swiper-item>
+	</swiper>
+</view>

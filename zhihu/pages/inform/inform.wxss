@@ -1,0 +1,84 @@
+/* pages/inform/inform.wxss */
+.classify-box{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	padding-top: 40px;
+	box-sizing: border-box;
+}
+/* 选项卡 */
+swiper{
+	height: 100%;
+}
+.demo-title{
+	text-align: center;margin-top: 100px;
+}
+.swiper-tab{
+	position: fixed;
+	display:flex;
+	top: 0px;
+  width: 100%;
+  border-bottom: 1px solid #eeeeee;
+  text-align: center;
+  line-height: 40px;
+  background: #338ce5;
+  z-index: 99;
+ }
+.swiper-tab-item{
+	font-size: 14px;
+  display: inline-block;
+  flex:1;
+  color: #61C0F9;
+ 	box-sizing: border-box;
+}
+.on{
+	color: #fff;
+  border-bottom: 3px solid #fff;
+ }
+
+.swiper-box{
+ display: block;
+ width: 100%;
+ height: 100%;
+}
+.swiper-box swiper-item{
+ height: 100%;
+ overflow-y: auto;
+}
+
+/* 选项卡第一页 */
+.home-cont-card{
+	position:relative;
+  background: #fff;
+  border-radius: 5px;
+  box-sizing: border-box;
+  margin-top: 2px;
+  padding: 10px 10px 10px 80px;
+}
+.home-cont-card image{
+	position:absolute;
+	top:10px;
+	left:10px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+.home-cont-head{
+  color:#888;
+}
+.home-cont-more{
+  float: right;
+}
+.home-cont-tite{
+  color:#333;
+  font-size: 18px;
+  margin: 5px 0;
+}
+.home-cont-text{
+  color:#555;
+  font-size: 14px;
+}
+.home-cont-discuss{
+  color:#888;
+  font-size: 12px;
+}
